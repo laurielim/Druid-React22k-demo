@@ -11,7 +11,7 @@ dependencies:
     - node
     - user
 id: blog
-label: Blog
+label: 'Blog test'
 module: views
 description: ''
 tag: ''
@@ -252,7 +252,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      enabled: false
+      enabled: true
       pager:
         type: full
         options:
