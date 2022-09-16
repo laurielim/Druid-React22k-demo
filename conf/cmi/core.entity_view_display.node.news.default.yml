@@ -1,0 +1,35 @@
+uuid: d843ac8c-ceff-4374-83a8-bfa6e52c1e2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.field_lift_image
+    - field.field.node.news.field_text
+    - node.type.news
+  module:
+    - text
+    - user
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  field_lift_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true
